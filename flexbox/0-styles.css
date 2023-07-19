@@ -179,6 +179,25 @@
   
   /* Grid
       ============================= */
+
+      /* Add a selector for the row class */
+.row {
+    display: flex;
+  }
+  
+  /* Remove the row::after declaration */
+  /* The ::after pseudo-element is not required when using flexbox for grid layouts */
+  
+  /* Remove the float: left inside [class*='col-'] */
+  [class*='col-'] {
+    /* The float property is not required when using flexbox for grid layouts */
+    /* float: left; */
+    padding: 10px;
+    /* Add flex property to control the width of columns */
+    flex: 1;
+    /* Add box-sizing property to include padding within the column width */
+    box-sizing: border-box;
+  }
   
   ul.row {
     margin: 0;
