@@ -6,6 +6,7 @@
     <title>Headphones</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="0-styles.css">
+    <link rel="stylesheet" href="1-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 
 </head>
@@ -39,5 +40,39 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
     </header>
+    <section class="What-we-do">
+        <div class="content2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="content">
+            <div class="flex">
+                <div class="items">
+                    <img src="images/sound-frecuency.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="items">
+                    <img src="images/video.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="items">
+                    <img src="images/music.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="items">
+                    <img src="images/hearing.png" alt="">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+<script>
+  const icon = document.querySelector('.icon');
+  const links = document.querySelector('.links');
+
+  icon.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+</script>
+
 </html>
